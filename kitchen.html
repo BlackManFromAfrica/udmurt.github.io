@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Про Удмуртию |  Кухня</title>
+     <link rel="stylesheet" href="stylekitch.css">
+</head>
+<body>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a.btn").click(function(){
+				$("html, body").animate({
+					scrollTop: $($(this).attr("href")).offset().top + "px"
+				}, {
+					duration: 1000,
+					easing: "swing"
+				});
+				return false;
+			});
+		});
+	</script>
+     <div class="wrapper">
+          <header id="menu">
+               <a href="index.htm" class="index"><h1>PRO</h1>
+                    <h1 id="udm">Удмуртию</h1></a>
+               <a href="#bakery" class="btn">Выпечка</a>
+               <a href="#desserts" class="btn">Десерты </a>
+               <a href="#story" class="btn">Напитки</a>
+          </header>
+               <main>
+                    <h2 id="bakery">Выпечка</h2>
+                    <div class="bakery">
+                         <div class="containerfirst">
+                              <img src="img/kitchen/0.jpg" alt="" id="kitch"><a href="#openModalPel" class="link">пельмени</a>
+                         </div>
+                         <div class="container">
+                              <img src="img/kitchen/2.jpeg" alt="" id="atrc"><a href="#openModalTab" class="link">табани </a>
+                         </div>
+                    </div>
+                    <h2 id="desserts">Десерты</h2>
+                    <div class="desserts">
+                         <div class="containerfirst">
+                              <img src="img/kitchen/0.jpg" alt="" id="kitch"><a href="#openModal" class="link">пельмени</a>
+                         </div>
+                         <div class="container">
+                              <img src="img/kitchen/2.jpeg" alt="" id="atrc"><a href="" class="link">табани </a>
+                         </div>
+                    </div>
+     </main>
+     <footer>
+          <p>На голодный желудок русский человек ничего делать и думать не хочет, а на сытый — не может.<br>-Фаина Георгиевна Раневская</p>
+          <img src="img/gerb.png" alt="" class="gerb">
+     </footer>
+     <div id="openModalPel" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content" style="height: 1000px;">
+              <div class="modal-header">
+                <h3 class="modal-title">Пельмени</h3>
+                <a href="#close" title="Close" class="close">×</a>
+              </div>
+              <div class="modal-body">
+                   <div class="box">
+                        <img src="img/kitchen/пельмени/main.jpg" alt="" style="width:300px ; height: 300px; opacity: 1;">
+                        <div class="compound">
+                             <p id="textcompound">СОСТАВ / ИНГРЕДИЕНТЫ</p>
+                             <ul>
+                                  <li>Говяжий фарш</li>
+                                  <li>Свиной фарш</li>
+                                  <li>Лук репчатый</li>
+                                  <li>Соль</li>
+                                  <li>Перец черный молотый</li>
+                                  <li>Вода</li>
+                                  <li>Яйца</li>
+                                  <li>Пшеничная мука</li>
+                                  <li>Растительное масло</li>
+                             </ul>
+                        </div>
+               </div>
+                    <p id="textstage">ШАГ 1:</p>
+                    <div class="recipe">
+                         <img src="img/kitchen/пельмени/1.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                         <div class="textrecipe">Как сделать пельмени классические? Подготовьте необходимые ингредиенты. Можете взять уже готовый фарш из свинины и говядины, но лучше всего сделайте его сами. Лук очистите от шелухи, помойте и обсушите.</div>
+               </div>
+               <p id="textstage">ШАГ 2:</p>
+                    <div class="recipe">
+                         <img src="img/kitchen/пельмени/2.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                         <div class="textrecipe">В глубокую миску переложите свиной фарш и фарш из говядины.</div>
+               </div>
+               <p id="textstage">ШАГ 3:</p>
+                    <div class="recipe">
+                         <img src="img/kitchen/пельмени/3.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                         <div class="textrecipe">Очищенный репчатый лук нарежьте и прокрутите в мясорубке с мелкой решеткой. Лук можете взять любой на ваше усмотрение. Но чем больше лука, тем готовый фарш будет сочнее и мягче. Но все зависит от вашего вкуса.</div>
+               </div>
+               <p id="textstage">ШАГ 4:</p>
+                    <div class="recipe">
+                         <img src="img/kitchen/пельмени/4.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                         <div class="textrecipe">Все посолите, поперчите и хорошенько перемешайте. По мне лучше обычного черного молотого перца нет, но вы можете взять и белый или зеленый молотый перец. Накройте миску крышкой и уберите в холодильник на 30 минут, чтобы мясо созрело</div>
+               </div>
+               <p id="textstage">ШАГ 5:</p>
+                    <div class="recipe">
+                         <img src="img/kitchen/пельмени/5.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                         <div class="textrecipe">Пока мясо в холодильнике, сделайте тесто. Для этого в глубокую миску налейте воду комнатной температуры, чтобы рукам было комфортно. Разбейте в миску сырое яйцо, добавьте масло, соль и перемешайте все до однородной массы.</div>
+               </div>
+               <p id="textstage">ШАГ 6:</p>
+                    <div class="recipe">
+                         <img src="img/kitchen/пельмени/6.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                         <div class="textrecipe">Просейте в миску к яйцам большую часть муки и начните замешивать тесто, подсыпая потихоньку муку. Ориентируйтесь на консистенцию теста, а не на объем муки.</div>
+               </div>
+               <p id="textstage">ШАГ 7:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/7.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Тесто должно быть эластичным, нежным, не липнуть к рукам. Готовое тесто соберите в ком и накройте полотенцем или пленкой. Оставьте его на кухонном столе на 20 минут.</div>
+          </div>
+          <p id="textstage">ШАГ 8:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/8.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Присыпьте стол небольшим количеством муки и переложите на него тесто. Разделите тесто на части, из каждой скатайте толстый жгут. Затем нарежьте их на небольшие кусочки - по числу пельменей. Пока будете возиться с одной частью теста, оставшееся накрывайте полотенцем, чтобы оно не подсыхало.</div>
+          </div>
+          <p id="textstage">ШАГ 9:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/9.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Раскатайте нарезанные кусочки теста в тонкие лепешки. Желательно, чтобы они были одинаковые и по возможности круглые.</div>
+          </div>
+          <p id="textstage">ШАГ 10:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/10.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">На каждую раскатанную лепешечку выложите ложкой мясной фарш.</div>
+          </div>
+          <p id="textstage">ШАГ 11:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/11.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Соедините противоположные края лепешки и плотно слепите их. Получатся вот такие вареники.</div>
+          </div>
+          <p id="textstage">ШАГ 12:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/12.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Затем соедините противоположные кончики каждого вареника и крепко прижмите. У нас получаются вот такие круглые пельмешки. Если сделали их много, то плоскую поверхность присыпьте мукой и уложите пельмени в один слой и не вплотную. Посыпьте снова мукой и отправьте их в морозилку для заморозки.</div>
+          </div>
+          <p id="textstage">ШАГ 13:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/13.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Если вы не любите или не хотите лепить пельмени вручную, воспользуйтесь формой для приготовления пельменей. И хоть они потеряют свою индивидуальность, но останутся такими же вкусными.</div>
+          </div>
+          <p id="textstage">ШАГ 14:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/14.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Когда семье захочется пельмешек, поставьте на плиту кастрюлю с водой, доведите воду до кипения, посолите. Кладите в кипящую воду пельмени по одному. Перемешайте осторожно и варите на среднем огне до готовности.</div>
+          </div>
+          <p id="textstage">ШАГ 15:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/15.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Приятного аппетита!</div>
+          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="openModalTab" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content" style="height: 1000px;">
+              <div class="modal-header">
+                <h3 class="modal-title">Пельмени</h3>
+                <a href="#close" title="Close" class="close">×</a>
+              </div>
+              <div class="modal-body">
+                   <div class="box">
+                        <img src="img/kitchen/пельмени/main.jpg" alt="" style="width:300px ; height: 300px; opacity: 1;">
+                        <div class="compound">
+                             <p id="textcompound">СОСТАВ / ИНГРЕДИЕНТЫ</p>
+                             <ul>
+                                  <li>Говяжий фарш</li>
+                                  <li>Свиной фарш</li>
+                                  <li>Лук репчатый</li>
+                                  <li>Соль</li>
+                                  <li>Перец черный молотый</li>
+                                  <li>Вода</li>
+                                  <li>Яйца</li>
+                                  <li>Пшеничная мука</li>
+                                  <li>Растительное масло</li>
+                             </ul>
+                        </div>
+               </div>
+                    <p id="textstage">ШАГ 1:</p>
+                    <div class="recipe">
+                         <img src="img/kitchen/пельмени/1.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                         <div class="textrecipe">Как сделать пельмени классические? Подготовьте необходимые ингредиенты. Можете взять уже готовый фарш из свинины и говядины, но лучше всего сделайте его сами. Лук очистите от шелухи, помойте и обсушите.</div>
+               </div>
+               <p id="textstage">ШАГ 2:</p>
+                    <div class="recipe">
+                         <img src="img/kitchen/пельмени/2.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                         <div class="textrecipe">В глубокую миску переложите свиной фарш и фарш из говядины.</div>
+               </div>
+               <p id="textstage">ШАГ 3:</p>
+                    <div class="recipe">
+                         <img src="img/kitchen/пельмени/3.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                         <div class="textrecipe">Очищенный репчатый лук нарежьте и прокрутите в мясорубке с мелкой решеткой. Лук можете взять любой на ваше усмотрение. Но чем больше лука, тем готовый фарш будет сочнее и мягче. Но все зависит от вашего вкуса.</div>
+               </div>
+               <p id="textstage">ШАГ 4:</p>
+                    <div class="recipe">
+                         <img src="img/kitchen/пельмени/4.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                         <div class="textrecipe">Все посолите, поперчите и хорошенько перемешайте. По мне лучше обычного черного молотого перца нет, но вы можете взять и белый или зеленый молотый перец. Накройте миску крышкой и уберите в холодильник на 30 минут, чтобы мясо созрело</div>
+               </div>
+               <p id="textstage">ШАГ 5:</p>
+                    <div class="recipe">
+                         <img src="img/kitchen/пельмени/5.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                         <div class="textrecipe">Пока мясо в холодильнике, сделайте тесто. Для этого в глубокую миску налейте воду комнатной температуры, чтобы рукам было комфортно. Разбейте в миску сырое яйцо, добавьте масло, соль и перемешайте все до однородной массы.</div>
+               </div>
+               <p id="textstage">ШАГ 6:</p>
+                    <div class="recipe">
+                         <img src="img/kitchen/пельмени/6.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                         <div class="textrecipe">Просейте в миску к яйцам большую часть муки и начните замешивать тесто, подсыпая потихоньку муку. Ориентируйтесь на консистенцию теста, а не на объем муки.</div>
+               </div>
+               <p id="textstage">ШАГ 7:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/7.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Тесто должно быть эластичным, нежным, не липнуть к рукам. Готовое тесто соберите в ком и накройте полотенцем или пленкой. Оставьте его на кухонном столе на 20 минут.</div>
+          </div>
+          <p id="textstage">ШАГ 8:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/8.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Присыпьте стол небольшим количеством муки и переложите на него тесто. Разделите тесто на части, из каждой скатайте толстый жгут. Затем нарежьте их на небольшие кусочки - по числу пельменей. Пока будете возиться с одной частью теста, оставшееся накрывайте полотенцем, чтобы оно не подсыхало.</div>
+          </div>
+          <p id="textstage">ШАГ 9:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/9.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Раскатайте нарезанные кусочки теста в тонкие лепешки. Желательно, чтобы они были одинаковые и по возможности круглые.</div>
+          </div>
+          <p id="textstage">ШАГ 10:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/10.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">На каждую раскатанную лепешечку выложите ложкой мясной фарш.</div>
+          </div>
+          <p id="textstage">ШАГ 11:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/11.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Соедините противоположные края лепешки и плотно слепите их. Получатся вот такие вареники.</div>
+          </div>
+          <p id="textstage">ШАГ 12:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/12.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Затем соедините противоположные кончики каждого вареника и крепко прижмите. У нас получаются вот такие круглые пельмешки. Если сделали их много, то плоскую поверхность присыпьте мукой и уложите пельмени в один слой и не вплотную. Посыпьте снова мукой и отправьте их в морозилку для заморозки.</div>
+          </div>
+          <p id="textstage">ШАГ 13:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/13.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Если вы не любите или не хотите лепить пельмени вручную, воспользуйтесь формой для приготовления пельменей. И хоть они потеряют свою индивидуальность, но останутся такими же вкусными.</div>
+          </div>
+          <p id="textstage">ШАГ 14:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/14.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Когда семье захочется пельмешек, поставьте на плиту кастрюлю с водой, доведите воду до кипения, посолите. Кладите в кипящую воду пельмени по одному. Перемешайте осторожно и варите на среднем огне до готовности.</div>
+          </div>
+          <p id="textstage">ШАГ 15:</p>
+               <div class="recipe">
+                    <img src="img/kitchen/пельмени/15.jpg" alt="" style="width:300px ; height: 300px; opacity: 1; object-fit: cover;">
+                    <div class="textrecipe">Приятного аппетита!</div>
+          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+</body>
+</html>

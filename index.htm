@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Про Удмуртию |  Главная</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a.btn").click(function(){
+				$("html, body").animate({
+					scrollTop: $($(this).attr("href")).offset().top + "px"
+				}, {
+					duration: 1000,
+					easing: "swing"
+				});
+				return false;
+			});
+		})
+	</script>
+     <div class="wrapper">
+          <header id="menu">
+               <h1 class="pro">PRO</h1>
+               <h1 id="udm">Удмуртию</h1>
+               <a href="#kitch" class="btn">кухня</a>
+               <a href="#atrc" class="btn">достопримечательности </a>
+               <a href="#story" class="btn " >история</a>
+          </header>
+               <main>
+                    <div class="container">
+                         <img src="img/kitchen.png" alt="" id="kitch"><a href="https://eco-l1fe.github.io/" class="link">кухня</a>
+                    </div>
+                    <div class="container">
+                         <img src="img/attr.png" alt="" id="atrc"><a href="attraction.html" class="link">достопримечательности </a>
+                    </div>
+                    <div class="container">
+                         <img src="img/story.png" alt="" id="story"><a href="history.html" class="link">история</a>
+                    </div>
+     </main>
+     <footer>
+          <p>Родина есть для нас предмет культурного творчества, это мы сами в наших особенных дарах и талантах. <br>-Сергей Николаевич Булгаков</p>
+          <img src="img/gerb.png" alt="" class="gerb">
+     </footer>
+            </div>
+          </div>
+        </div>
+     </div>
+</body>
+</html>
